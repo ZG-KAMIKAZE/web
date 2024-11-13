@@ -1,0 +1,76 @@
+
+.navbar {
+    background-color: #343a40; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar .navbar-brand {
+    font-size: 1.8rem; 
+    font-weight: bold; 
+}
+
+.navbar .nav-link {
+    color: #ffffff; 
+    margin: 0 15px; 
+    transition: color 0.3s; 
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107; 
+    text-decoration: underline; 
+}
+
+.container {
+    margin-top: 30px; 
+}
+
+/* Estilos para el contenido principal */
+h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+}
+
+/* Estilos para el pie de página */
+.footer-style {
+    background-color: rgba(255, 165, 0, 0.9); 
+    color: #16d8d8; 
+    padding: 20px; 
+    position: relative; 
+}
+
+.footer-style p {
+    margin: 5px 0; 
+}
+
+.footer-col {
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+.footer-col h3 {
+    font-weight: bold; 
+    margin-bottom: 15px; 
+}
+
+.social-icon {
+    color: #007bff; 
+    text-decoration: none; 
+    margin: 0 10px;
+    font-size: 1.2rem; 
+}
+
+.social-icon:hover {
+    color: #0056b3; /* Color más oscuro al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        margin: 0 10px; /* Espaciado reducido en dispositivos pequeños */
+    }
+
+    h1 {
+        font-size: 2rem; /* Tamaño de fuente reducido en dispositivos pequeños */
+    }
+}

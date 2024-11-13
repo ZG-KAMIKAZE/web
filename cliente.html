@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Categorías</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estiloadi.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo9.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo08.css">
+    
+    <!-- jQuery and Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        h4 {
+            background-color: rgba(255, 165, 0, 0.8);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-style {
+            background-color:rgba(255, 165, 0, 0.8);
+            padding: 40px 0;
+            color: #333;
+        }
+        .footer-col h3 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer-col p {
+            margin-bottom: 10px;
+        }
+        .social-icon {
+            color: #007bff; 
+            text-decoration: none; 
+        }
+        .social-icon:hover {
+            text-decoration: underline;
+        }
+        .footer-col a {
+            display: block; 
+            margin-bottom: 5px; 
+        }
+        .social-icon i {
+            margin-right: 8px; 
+        }
+        @media (max-width: 768px) {
+            .footer-col {
+                margin-bottom: 20px; 
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <section class="jumbotron">
+        <div class="container">
+            <h1>FERRETERIA CLAVIJO</h1>
+        </div>
+    </section>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-sw">
+                    <span class="sr-only">Desplegar/Ocultar-Menú</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="cliente.html" class="navbar-brand">FERRETERIA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navegacion-sw">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">INICIO</a></li>
+                    <li><a href="introduccion.html">NOSOTROS</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">TODAS LAS CATEGORIAS <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" id="listaCategorias">
+                            <li><a href="cli_aditivos.php">ADITIVOS</a></li>
+                            <li class="divider"></li>
+                            <li><a href="baño.php">BAÑO</a></li>
+                            <li class="divider"></li>
+                            <li><a href="construccion.php">CONSTRUCCION</a></li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="login.php">MI CUENTA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <br> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/herramientas1.jfif" alt="herramientas1" style="width:100%;height: 436px">
+            </div>
+            <div class="item">
+                <img src="img/herramientas2.png" alt="herramientas2" style="width:100%;height: 436px">
+            </div>
+            <div class="item">
+                <img src="img/cemento.png" alt="cemento" style="width:100%;height: 436px">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">ATRAS</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">SIGUIENTE</span>
+        </a>
+    </div>
+
+    <h4>Lo mejor de nuestras Categorías</h4> 
+</div>
+
+<br>
+
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="productos.html">
+                    <div class="category-card">
+                        <h2>Aditivos</h2>
+                        <img src="img/104013-Canaleta_Con_Pegamento.jpg" class="img-responsive">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="productos.html">
+                    <div class="category-card">
+                        <h2>Baño</h2>
+                        <img src="img/138919.webp" class="img-responsive">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="productos.html">
+                    <div class="category-card">
+                        <h2>Construcción</h2>
+                        <img src="img/21393.webp" class="img-responsive">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-style">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 footer-col">
+                <h3>Información</h3>
+                <p>Dirección: Calle Falsa 123</p>
+                <p>Teléfono: +123456789</p>
+                <p>Email: info@ferreteria.com</p>
+            </div>
+            <div class="col-md-4 footer-col">
+                <h3>Conéctate con nosotros</h3>
+                <p><a class="social-icon" href="#"><i class="fab fa-facebook"></i>Facebook</a></p>
+                <p><a class="social-icon" href="#"><i class="fab fa-twitter"></i>Twitter</a></p>
+                <p><a class="social-icon" href="#"><i class="fab fa-instagram"></i>Instagram</a></p>
+            </div>
+            <div class="col-md-4 footer-col">
+                <h3>Suscríbete a nuestro boletín</h3>
+                <p><input type="email" placeholder="Tu correo" class="form-control"></p>
+                <p><button class="btn btn-primary">Suscribirse</button></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

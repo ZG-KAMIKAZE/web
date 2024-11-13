@@ -1,0 +1,42 @@
+
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+  .contact-info {
+    flex-basis: 40%;
+  }
+  .contact-form {
+    flex-basis: 50%;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    
+  }
+  .name-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  .name-fields input[type="text"] {
+    width: calc(50% - 11px);
+  }
+  
+
+  .cajabutton{
+           
+    color: white;
+    background: rgb(44, 17, 197);
+    transition: background 1s ease;
+    border: none;
+    border-radius: 5px;
+}
+.cajabutton:hover{
+    background:rgb(14, 135, 234); 
+}
